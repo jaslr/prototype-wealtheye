@@ -1,0 +1,285 @@
+ <h3><span class="label label-warning">Savings goal</span> <span class="label label-info">Save for a house deposit</span></h3>
+
+<div class="panel-group" id="accordion">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <div class="row clearfix">
+                <div class="col-md-10 column">
+                    <h2 class="panel-title">Step 1 - Add new goal</h2>
+                    <div id="collapseOne" class="panel-collapse collapse in">
+                        <blockquote class="bg-warning">
+                            <p>Let's add some more details</p>
+                        </blockquote>
+                        <form>
+                            <div class="form-group">
+                                <label for="goalName">Goal name</label>
+                                <input type="text" class="form-control input-lg" id="goalName" placeholder="Enter a name for this goal">
+                            </div>
+
+                            <div class="form-group">
+                                <div class="row clearfix">
+                                    <div class="col-md-6 column">
+                                        <label for="startDate">Start date</label>
+                                        <div class="input-group date">
+                                            <input id="startDate" type="text" class="form-control datepicker" data-provide="datepicker"><span class="input-group-addon"><i class="glyphicon glyphicon-th"></i></span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 column">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <div class="row clearfix">
+                                    <div class="col-md-6 column">
+                                        <label for="endDate">Due date</label>
+                                        <div class="input-group date">
+                                            <input id="startDate" type="text" class="form-control datepicker" data-provide="datepicker"><span class="input-group-addon"><i class="glyphicon glyphicon-th"></i></span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 column"></div>
+                                </div>
+
+
+                                <div class="row clearfix">
+
+                                    <div class="col-md-6 col-md-offset-6">
+                                        <div class="row clearfix">
+                                            <div class="col-md-12 column ">
+                                                <div class="row clearfix">
+                                                    <div class="col-md-2 column">
+                                                        <label>OR</label>
+                                                    </div>
+                                                    <div class="col-md-4 column">
+                                                        <input type="text" class="form-control" id="years" placeholder="0">years
+                                                    </div>
+                                                    <div class="col-md-4 column">
+                                                        <input type="text" class="form-control" id="months" placeholder="0">months
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row clearfix">
+                                            <div class="col-md-12 column ">
+                                                <div class="row clearfix">
+                                                    <div class="col-md-2 column">
+                                                        <label>OR</label>
+                                                    </div>
+                                                    <div class="col-md-4 column">
+                                                        <input type="text" class="form-control" id="aged1" placeholder="Age">William
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row clearfix">
+                                            <div class="col-md-12 column">
+                                                <div class="row clearfix">
+                                                    <div class="col-md-2 column">
+                                                        <label>OR</label>
+                                                    </div>
+                                                    <div class="col-md-4 column">
+                                                        <input type="text" class="form-control" id="aged2" placeholder="Age">Mary
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" class="btn btn-primary">Next</button>
+                        </form>
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2 column">
+            </div>
+        </div>
+    </div>
+
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <div class="row clearfix">
+                <div class="col-md-10 column">
+                    <h2 class="panel-title">Step 2 - Goal tracking</h2>
+                    <div id="collapseTwo" class="panel-collapse collapse">
+
+                        <blockquote class="bg-warning" class="bg-warning">
+                            <p><strong>How do you want to track this goal?</strong> 
+                            </p>
+                            <p>Choose which accounts to track goal, select all that apply.</p>
+                        </blockquote>
+                        <form>
+                            <select multiple class="form-control">
+                                <option>Commonwealth Bank Streamline Account ($3,454)</option>
+                                <option>ING Maxisaver Account ($36,723)</option>
+                                <option>28 Degrees Card (-$5,786)</option>
+                                <option>Commonwealth Bank Platinum Mastercard (-$7,867)</option>
+                            </select>
+
+                            <p><strong>Total balance of funds chosen: $342,324</strong>
+                            </p>
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" name="goaltracking">How much?
+                                </label>
+
+                                <div class="input-group col-sm-2">
+                                    <div class="input-group-addon">$</div>
+                                    <input type="text" class="form-control" id="goal-manual-amount" placeholder="Amount">
+                                    <div class="input-group-addon">.00</div>
+                                </div>
+                            </div>
+                            <label>
+                                OR
+                            </label>
+                            <div class="radio">
+
+
+
+                                <label>
+                                    <input type="radio" name="goaltracking">Start with full account balance
+                                </label>
+                            </div>
+                            <button data-toggle="collapse" data-parent="#accordion" href="#collapseThree" class="btn btn-primary">Next</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <div class="row clearfix">
+                <div class="col-md-10 column">
+                    <h2 class="panel-title">Simulation</h2>
+
+
+
+
+
+                    <div id="collapseThree" class="panel-collapse collapse">
+
+                        <blockquote class="bg-warning">
+                            <p>To meet your goal of XYZ you will need to contribute $500 per month</p>
+                        </blockquote>
+
+                        <h3>What if</h3>
+
+                        <div class="row clearfix" ng-controller="goalSimulationChartController">
+                            <div class="col-md-6 column">
+                                <!--<p>Contributions</p>
+                                        <div class="slider shor"></div>
+                                        <p>Starting balance</p>
+                                        <div class="slider shor slider-success"></div>
+                                        <p>Due date</p>
+                                        <div class="slider shor slider-material-pink"></div>-->
+
+
+                                <div id="slidertitle">Contributions</div>
+                                <div id="slider1" class="slider shor slider-success"></div>
+                                <div id="slider1_value">200</div>
+
+
+
+                                <div id="slidertitle2">Starting balance</div>
+                                <div class="slider shor" id="slider2"></div>
+                                <div id="slider2_value">$0</div>
+
+                                <div id="slidertitle3">Due date</div>
+                                <div id="slider3" class="slider shor slider-material-pink"></div>
+                                <div id="slider3_value">$0</div>
+
+                            </div>
+
+                            <highchart config="goalSimulationChartConfig"></highchart>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <div class="row clearfix">
+                <div class="col-md-12 column">
+                    <h2 class="panel-title">Success - goal has now been set</h2>
+                    <div id="collapseFive" class="panel-collapse collapse">
+
+
+                        <form>
+
+                            <p>Update me:</p>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox">Weekly
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox">Monthly
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox">Annually
+                                </label>
+                            </div>
+
+
+                            <p>Event triggers</p>
+
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox">Update me when my goal gets off track
+                                </label>
+                            </div>
+
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox">Update me when my goal gets back on track
+                                </label>
+                            </div>
+                            <button data-toggle="collapse" data-parent="#accordion" href="#collapseThree" class="btn btn-default">Next</button>
+
+                        </form>
+
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <div class="row clearfix">
+                <div class="col-md-12 column">
+                    <h2 class="panel-title">All done</h2>
+                    <div id="collapseSix" class="panel-collapse collapse">
+                        <form>
+                            <button data-toggle="collapse" href="/" class="btn btn-primary">Add another goal</button>
+                            <button data-toggle="collapse" href="/" class="btn btn-default">Return</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

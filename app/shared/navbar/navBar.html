@@ -1,0 +1,17 @@
+<div class="sidebar">
+    <ul class="nav nav-sidebar nav-extended">
+        <li class="active"><a href="#/"><i class="glyphicon mdi-action-dashboard"></i>Dashboard</a>
+        </li>
+        <li><a href="#/accounts"><svg-image class="svg icon icon-trip" alt="Bank account" src="/assets/images/icon-accounts.svg"></svg-image>Accounts</a>
+        </li>
+        <li><a href="#">Export</a>
+        </li>
+    </ul>
+    <ul class="nav nav-sidebar nav-condensed">
+        <li class="active"><a href="#/"><i class="mdi-action-dashboard"></i></a>
+        </li>
+        <li><a href="#/accounts"><i class="glyphicon glyphicon-piggy-bank"></i></a>
+        </li>
+    </ul>
+    <div class="nav-extended" ng-include="'app/components/accounts/accountsSummary.html'" ng-controller="accountsController"></div>
+</div>

@@ -1,0 +1,121 @@
+<h3 ng-show="goalCategory">
+     <span class="label label-warning" class="bounce">{{goalCategory}}</span>
+     <span class="label label-info" class="bounce">{{goalSubCategory}}</span>
+</h3>
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h2 class="panel-title">What type of goal?</h2>
+    </div>
+    <div class="panel-body">
+        <div class="list-group">
+            <a ng-class="{active : activeValue === value}"class="list-group-item" ng-click="goalCategory = 'Repaying Debt'; clickedPage(value)">
+                <h4 class="list-group-item-heading"><svg-image class="svg icon icon-repaying-debt" alt="Repaying debt" src="/assets/images/icon-debt-repayment.svg"></svg-image>Repaying Debt</h4>
+                <p class="list-group-item-text">Repay your mortgage, clear credit card debt, pay off a personal loan.</p>
+            </a>
+            <a ng-class="{active : activeValue === value}" class="list-group-item" ng-click="goalCategory = 'Saving'; clickedPage(value)">
+                <h4 class="list-group-item-heading"><svg-image class="svg icon icon-saving" alt="Repaying debt" src="/assets/images/icon-saving.svg"></svg-image>Saving</h4>
+                <p class="list-group-item-text">Save for a holiday, children's education, a new car, a house deposit, increase your net worth.</p>
+            </a>
+            <a ng-class="{active : activeValue === value};flash"class="list-group-item" ng-click="goalCategory = 'Retirement'; clickedPage(value)">
+                <h4 class="list-group-item-heading"><svg-image class="svg icon icon-retirement" alt="Retiring couple" src="/assets/images/icon-retirement.svg"></svg-image>Retirement</h4>
+                <p class="list-group-item-text">Save enough for retirement.</p>
+            </a>
+        </div>
+    </div>
+</div>
+
+<div class="panel panel-default" ng-show="goalCategory == 'Repaying Debt'">
+    <div class="panel-heading">
+        <h2 class="panel-title">Repaying Debt</h2>
+    </div>
+    <div class="panel-body">
+        <p>Let's get some more information about this goal</p>
+        <div class="list-group">
+            <a class="list-group-item" ng-click="goalSubCategory = 'Saving for emergency fund'">
+                <h4 class="list-group-item-heading">Saving for emergency fund</h4> 
+            </a>
+            <a class="list-group-item" ng-click="goalSubCategory = 'Saving for a holiday'">
+                <h4 class="list-group-item-heading">Saving for a holiday</h4> 
+            </a>
+            <a class="list-group-item" ng-click="goalSubCategory = 'Save for a house deposit'">
+                <h4 class="list-group-item-heading">Save for a house deposit</h4> 
+            </a>
+            <a class="list-group-item" ng-click="goalSubCategory = 'Save for education'">
+                <h4 class="list-group-item-heading">Save for education</h4> 
+            </a>
+            <a class="list-group-item" ng-click="goalSubCategory = 'Grow your net worth'">
+                <h4 class="list-group-item-heading">Grow your net worth</h4> 
+            </a>
+            <a class="list-group-item" ng-click="goalSubCategory = 'Save money'">
+                <h4 class="list-group-item-heading">Save money</h4> 
+            </a>
+            <a class="list-group-item" ng-click="goalSubCategory = 'Other'">
+                <h4 class="list-group-item-heading">Other</h4> 
+            </a>
+        </div>
+    </div>
+</div>
+
+<div class="panel panel-default" ng-show="goalCategory == 'Retirement'">
+    <div class="panel-heading">
+        <h2 class="panel-title">Retirement</h2>
+    </div>
+    <div class="panel-body">
+        <p>Let's get some more information about this goal</p>
+        <div class="list-group">
+            <a class="list-group-item" ng-click="goalSubCategory = 'Saving for emergency fund'">
+                <h4 class="list-group-item-heading">Saving for emergency fund</h4> 
+            </a>
+            <a class="list-group-item" ng-click="goalSubCategory = 'Saving for a holiday'">
+                <h4 class="list-group-item-heading">Saving for a holiday</h4> 
+            </a>
+            <a class="list-group-item" ng-click="goalSubCategory = 'Save for a house deposit'">
+                <h4 class="list-group-item-heading">Save for a house deposit</h4> 
+            </a>
+            <a class="list-group-item" ng-click="goalSubCategory = 'Save for education'">
+                <h4 class="list-group-item-heading">Save for education</h4> 
+            </a>
+            <a class="list-group-item" ng-click="goalSubCategory = 'Grow your net worth'">
+                <h4 class="list-group-item-heading">Grow your net worth</h4> 
+            </a>
+            <a class="list-group-item" ng-click="goalSubCategory = 'Save money'">
+                <h4 class="list-group-item-heading">Save money</h4> 
+            </a>
+            <a class="list-group-item" ng-click="goalSubCategory = 'Other'">
+                <h4 class="list-group-item-heading">Other</h4> 
+            </a>
+        </div>
+    </div>
+</div>
+
+<div class="panel panel-default" ng-show="goalCategory == 'Saving'">
+    <div class="panel-heading">
+        <h2 class="panel-title">Savings</h2>
+    </div>
+    <div class="panel-body">
+        <p>Let's get some more information about this goal</p>
+        <div class="list-group">
+            <a class="list-group-item" ng-click="goalSubCategory = 'Saving for emergency fund'">
+                <h4 class="list-group-item-heading">Saving for emergency fund</h4> 
+            </a>
+            <a class="list-group-item" ng-click="goalSubCategory = 'Saving for a holiday'">
+                <h4 class="list-group-item-heading">Saving for a holiday</h4> 
+            </a>
+            <a class="list-group-item" ng-click="goalSubCategory = 'Save for a house deposit'">
+                <h4 class="list-group-item-heading">Save for a house deposit</h4> 
+            </a>
+            <a class="list-group-item" ng-click="goalSubCategory = 'Save for education'">
+                <h4 class="list-group-item-heading">Save for education</h4> 
+            </a>
+            <a class="list-group-item" ng-click="goalSubCategory = 'Grow your net worth'">
+                <h4 class="list-group-item-heading">Grow your net worth</h4> 
+            </a>
+            <a class="list-group-item" ng-click="goalSubCategory = 'Save money'">
+                <h4 class="list-group-item-heading">Save money</h4> 
+            </a>
+            <a class="list-group-item" ng-click="goalSubCategory = 'Other'">
+                <h4 class="list-group-item-heading">Other</h4> 
+            </a>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,389 @@
+<div class="panel masonry-tile col-md-7 panel-default">
+    <div class="panel-heading">
+        <div class="row clearfix">
+            <div class="col-md-8 column">
+                <h2 class="panel-title">My cashflow</h2>
+            </div>
+            <div class="col-md-4 column">
+                <div class="btn-group  pull-right">
+                    <button class="btn btn-default" data-toggle="dropdown">Last month</button>
+                    <button data-toggle="dropdown" class="btn btn-default dropdown-toggle"><span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a href="#">Last week</a>
+                        </li>
+                        <li>
+                            <a href="#">Last fortnight</a>
+                        </li>
+                        <li>
+                            <a href="#">This month</a>
+                        </li>
+                        <li>
+                            <a href="#">Last 30 days</a>
+                        </li>
+                        <li>
+                            <a href="#">Last 3 months</a>
+                        </li>
+                        <li>
+                            <a href="#">Last 6 months</a>
+                        </li>
+                        <li>
+                            <a href="#">Last year</a>
+                        </li>
+                        <li>
+                            <a href="#">This financial year</a>
+                        </li>
+                        <li>
+                            <a href="#">Last financial year</a>
+                        </li>
+                        <li>
+                            <a href="#">Last 3 months</a>
+                        </li>
+                        <li>
+                            <a href="#">All time</a>
+                        </li>
+                        <li class="divider">
+                        </li>
+                        <li>
+                            <a href="#">Custom range</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="panel-body">
+        <div class="col-md-6 column">
+            <h4><table class="table">
+                            <tbody>
+                                <tr>
+                                    <th class="text-success">Income</th>
+                                    <td class="text-success">$15,435</td>
+                                </tr>
+                                <tr>
+                                    <th class="text-danger">Expenses</th>
+                                    <td class="text-danger">$10,170</td>
+                                </tr>
+                                <tr>
+                                    <th class="text-info">Remaining</th>
+                                    <td class="text-info">$5,265</td>
+                                </tr>
+                            </tbody>
+                        </table></h4>
+        </div>
+        <div class="col-md-6 column" ng-controller="cashflowController">
+            <highchart config="cashflowChartConfig"></highchart>
+        </div>
+        <h3>My Cashflow<div class="btn-group  pull-right">
+                                <button class="btn btn-default" data-toggle="dropdown" >Year to date</button>
+                                <button data-toggle="dropdown" class="btn btn-default dropdown-toggle"><span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu">                                    
+                                      <li>
+                                        <a href="#">Year to date</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Last year</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">This financial year</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Last financial year</a>
+                                    </li>                                   
+                                   
+                                    
+                                </ul>
+                            </div></h3>
+        <div ng-controller="cashflowControllerYearly" class="cashflowControllerMonthly">
+            <highchart config="cashflowControllerYearlyConfig"></highchart>
+            <div id="customLegend"></div>
+        </div>
+    </div>
+</div>
+
+
+<div class="panel masonry-tile col-md-4 panel-default btn-dark btn-material-blue-grey-500">
+    <div class="panel-heading">
+        <h2 class="panel-title">My Adviser</h2>
+    </div>
+    <div class="panel-body">
+        <div class="col-md-6 column">
+            <img src="/assets/images/portrait-photo.jpg" class="img-responsive" alt="Photo" />
+        </div>
+
+        <div class="col-md-4 column">
+
+            Josie Bluff
+            <button class="btn btn-primary btn-xs btn-material-blue-grey-300" href="tel:+61400427839">0400 427 839</button>
+            <button class="btn btn-primary btn-sm btn-material-blue-grey-800" data-toggle="modal" href="modals/modalSendMessage.html" data-target="#modalSendMessage">Send message</button>
+        </div>
+
+
+
+    </div>
+</div>
+<div class="panel masonry-tile col-md-4 panel-default">
+    <div class="panel-heading">
+        <h2 class="panel-title">My messages</h2>
+    </div>
+    <div class="panel-body">
+        <div class="row clearfix">
+            <table class="table table-striped table-hover">
+                <tbody>
+                    <tr>
+                        <th>Date</th>
+                        <th>Message</th>
+                    </tr>
+                    <tr>
+                        <td>21/12/2014</td>
+                        <td><a data-toggle="modal" data-target="#read-message">Your monthly update</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>15/11/2014</td>
+                        <td><a data-toggle="modal" data-target="#read-message">Happy Birthday William</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>25/11/2014</td>
+                        <td><a data-toggle="modal" data-target="#read-message">Has your income changed recently?</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <button type="button" class="btn btn-primary pull-right">All messages</button>
+            <div id="read-message" class="modal fade" tabindex="-1">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <p>E dolore commodo, id anim aute sint cupidatat eu est anim tamen ad possumus, legam officia firmissimum. Eram deserunt domesticarum, iis ita praetermissum, nam aliquip quo probant, incididunt et occaecat an nam enim exquisitaque a nescius velit admodum, non ad cohaerescant, probant o nulla tempor. Aute aut te quis arbitror ubi ne aliqua consequat aliquip. Ad sunt laborum senserit, de do quem possumus. Sint tractavissent cupidatat aute possumus ita elit ad cupidatat. Arbitror ab fabulas o eu e veniam pariatur. Non voluptate comprehenderit ad nisi id voluptate. Quis distinguantur quibusdam quae mentitum o si minim illum nisi mandaremus.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+
+
+
+<div class="panel-default panel masonry-tile col-md-7 " ng-controller="goalChartController">
+    <div class="panel-heading">
+        <div class="row clearfix">
+            <div class="col-md-12 column">
+                <h2 class="panel-title">My goals     
+                            <a class="btn btn-group btn-default pull-right" href="#/addGoal">
+                                <i class="glyphicon glyphicon-plus"></i> Add goal</a></h2>
+            </div>
+        </div>
+    </div>
+    <ul class="list-group list-goals">
+        <li class="list-group-item list-group-goal-behind">
+            <div class="row clearfix">
+                <div class="col-md-12 column">
+                    <h3 class="list-group-item-heading"><svg-image class="svg icon icon-trip" alt="Aeroplane" src="/assets/images/icon-trip.svg"></svg-image>European holiday<div class=" btn-default btn-group-sm pull-right"><button data-toggle="dropdown" class="btn btn-link dropdown-toggle"><i class="glyphicon glyphicon glyphicon-option-horizontal"></i></button>                                
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a href="#/editGoal">Edit</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Reorder</a>
+                                    </li>                                    
+                                </ul>
+                            </div></h3>
+                </div>
+            </div>
+
+
+            <div class="col-md-5">
+                <highchart class="goalChart" config="goalChartOneConfig"></highchart>
+            </div>
+            <div class="col-md-7">
+                <table class="table table-condensed">
+                    <thead>
+                        <tr>
+                            <td>Goal</td>
+                            <td>$20,000 by October 2015</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Currently</td>
+                            <td>$15,667</td>
+                        </tr>
+                        <tr>
+                            <td>Remaining</td>
+                            <td>$4,323 and 10 months</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </li>
+        <li class="list-group-item list-group-goal-infront">
+            <div class="row clearfix">
+                <div class="col-md-12 column">
+                    <h3 class="list-group-item-heading"><svg-image class="svg icon icon-education" alt="Education mortar board" src="/assets/images/icon-education.svg"></svg-image> Private school education<div class=" btn-default btn-group-sm pull-right"><button data-toggle="dropdown" class="btn btn-link dropdown-toggle"><i class="glyphicon glyphicon glyphicon-option-horizontal"></i></button>                                
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a href="#/editGoal">Edit</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Reorder</a>
+                                    </li>                                    
+                                </ul>
+                            </div></h3> 
+
+                </div>
+            </div>
+
+            <div class="col-md-5">
+
+                <highchart class="goalChart" config="goalChartTwoConfig"></highchart>
+            </div>
+            <div class="col-md-7">
+                <table class="table table-condensed">
+
+                    <thead>
+                        <tr>
+                            <td>Goal</td>
+                            <td>$117,870 by January 2019</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Currently</td>
+                            <td>$16,547</td>
+                        </tr>
+                        <tr>
+                            <td>Remaining</td>
+                            <td>$101,323 and 4.2 years</td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+
+        </li>
+        <li class="list-group-item list-group-goal-infront">
+            <div class="row clearfix">
+                <div class="col-md-12 column">
+                    <h3 class="list-group-item-heading"><svg-image class="svg icon icon-retirement" alt="Retiring couple" src="/assets/images/icon-retirement.svg"></svg-image> Retirement - $80,000 p/a<div class=" btn-default btn-group-sm pull-right"><button data-toggle="dropdown" class="btn btn-link dropdown-toggle"><i class="glyphicon glyphicon glyphicon-option-horizontal"></i></button>                                
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a href="#/editGoal">Edit</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Reorder</a>
+                                    </li>                                    
+                                </ul>
+                            </div></h3> 
+
+                </div>
+            </div>
+            <div class="row clearfix">
+                <div class="col-md-5 column">
+                    <highchart class="goalChart" config="goalChartThreeConfig"></highchart>
+                </div>
+                <div class="col-md-7 column">
+
+                    <table class="table table-condensed">
+                        <thead>
+                            <tr>
+                                <td>Goal</td>
+                                <td>$2,871,369 by January 2040</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Currently</td>
+                                <td>$281,666</td>
+                            </tr>
+                            <tr>
+                                <td>Remaining</td>
+                                <td>$1,652,035 and 25.2 years</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </li>
+    </ul>
+</div>
+
+
+
+
+<div class="panel masonry-tile col-md-4 panel-default" ng-controller="netWorthChartController">
+    <div class="panel-heading">
+        <h3 class="panel-title">My net worth  <div class="pull-right"><strong>$785,100</strong></div></h3>
+    </div>
+    <highchart class="net-worth" config="netWorthChartConfig"></highchart>
+</div>
+
+
+
+
+<div class="panel masonry-tile panel-default col-md-7" ng-controller="assetChartController">
+    <div class="panel-heading">
+        <h3 class="panel-title">My asset allocation</h3>
+    </div>
+    <highchart config="assetChartControllerConfig"></highchart>
+</div>
+
+<div class="col-md-4 panel masonry-tile panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">My documents</h3>
+    </div>
+    <div class="panel-body">
+        <table class="table table-striped table-hover">
+            <tbody>
+                <tr>
+                    <th>Date</th>
+                    <th>Document</th>
+
+                </tr>
+                <tr>
+                    <td>26/11/2014</td>
+                    <td>Fee Disclosure Statement</td>
+
+                </tr>
+                <tr>
+                    <td>09/11/2014</td>
+                    <td>Record of Advice</td>
+                </tr>
+                <tr>
+                    <td>29/10/2014</td>
+                    <td>Risk Profile Update</td>
+                </tr>
+                <tr>
+                    <td>01/12/2013</td>
+                    <td>Statement of Advice</td>
+                </tr>
+                <tr>
+                    <td>09/11/2013</td>
+                    <td>Record of Advice</td>
+                </tr>
+            </tbody>
+        </table>
+        <button type="button" class="btn btn-primary pull-right">All documents</button>
+        <div id="read-message" class="modal fade" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <p>E dolore commodo, id anim aute sint cupidatat eu est anim tamen ad possumus, legam officia firmissimum. Eram deserunt domesticarum, iis ita praetermissum, nam aliquip quo probant, incididunt et occaecat an nam enim exquisitaque a nescius velit admodum, non ad cohaerescant, probant o nulla tempor. Aute aut te quis arbitror ubi ne aliqua consequat aliquip. Ad sunt laborum senserit, de do quem possumus. Sint tractavissent cupidatat aute possumus ita elit ad cupidatat. Arbitror ab fabulas o eu e veniam pariatur. Non voluptate comprehenderit ad nisi id voluptate. Quis distinguantur quibusdam quae mentitum o si minim illum nisi mandaremus.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
